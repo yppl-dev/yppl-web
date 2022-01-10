@@ -39,16 +39,19 @@
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
   }
+
 header {
   position: fixed;
   width: 100%;
+  margin-bottom: var(--sp-med);
 }
 
 .navbar{
   position: relative;
-  background: transparent;
+  background: var(--col-acc);
   height: 100px;
   transition: 0.3s ease-in background-color;
+  overflow-x: hidden;
 }
 
 .navbar--sticky{
@@ -63,6 +66,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .navbar__logo{
@@ -75,6 +79,7 @@ header {
   width: 100%;
   height: auto;
   margin-right: var(--sp-med);
+  overflow-x: hidden;
 }
 
 .navbar__flexContainer--flex{
