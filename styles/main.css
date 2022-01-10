@@ -9,6 +9,7 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -41,8 +42,6 @@ img {
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 
@@ -311,6 +310,7 @@ footer a{
 
 
 
+
 @media screen and (max-width: 568px) {
 
   :root {
@@ -325,6 +325,14 @@ footer a{
     --fs-sml: 1rem;
 
   
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
   }
   
   .navbar--flex{
@@ -342,7 +350,7 @@ footer a{
     z-index: 5;
   }
 
-  .navbar__flexContainer--flex{
+ .navbar__flexContainer--flex{
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -351,7 +359,7 @@ footer a{
     padding: var(--sp-med) 0;
     transform: translateX(100%);
     
-  }
+  } 
   
   .navbar__navlink{
     color: var(--col-bg);
@@ -378,11 +386,6 @@ footer a{
     align-items: flex-start;
   }
 
-  .banner__logoContainer{
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
 
   .opa100 {
     opacity: 100%;
@@ -427,6 +430,34 @@ footer a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 569px) and (max-width: 1080px) {
 
   :root {
@@ -443,6 +474,15 @@ footer a{
 
   
   }
+
+  html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
 
   .navbar--flex{
     display: flex;
@@ -480,14 +520,7 @@ footer a{
   .transX {
     transform: translateX(0);
   }
-
-  .banner__title {
-    display: block;
-  }
   
-  .banner__logoContainer{
-    display: none;
-  }
 
   .content__imageContainer--4{
     grid-template-columns: repeat(2, 1fr);
@@ -512,4 +545,27 @@ footer a{
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
