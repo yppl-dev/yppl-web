@@ -135,7 +135,7 @@ header {
  }
 
 
- .content__list-title {
+ .content__list-title{
    font-size: var(--fs-med);
    font-weight: 600;
    margin-bottom: var(--sp-sml);
