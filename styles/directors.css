@@ -6,6 +6,7 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -57,7 +58,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .navbar__logo{
@@ -221,17 +221,19 @@ footer a{
 
   
   }
-  
+
+  html{
+    overflow-x: hidden;
+  }
+
   body{
     overflow-x: hidden;
   }
 
-  
   .navbar--flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow-x: hidden;
   }
 
   .navbar__flexContainer {
@@ -278,13 +280,17 @@ footer a{
     --fs-lrg: 2rem;
     --fs-med: 1.125rem;
     --fs-sml: 1rem;
+
   
   }
-  
-  body{
+
+  html{
     overflow-x: hidden;
   }
 
+  body{
+    overflow-x: hidden;
+  }
   
   .navbar--flex{
     display: flex;
@@ -292,7 +298,6 @@ footer a{
     align-items: center;
   }
 
-  
   .navbar__flexContainer {
     background-color: var(--col-acc);
     width: 100%;
@@ -310,7 +315,6 @@ footer a{
     gap: var(--sp-sml);
     padding: var(--sp-med) 0;
     transform: translateX(100%);
-    
   }
   
   .navbar__navlink{
