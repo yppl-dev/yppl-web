@@ -6,6 +6,7 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -40,9 +41,10 @@ body {
   overflow-x: hidden;
 }
 
+
 header {
   width: 100%;
-  margin-bottom: var(--sp-med);
+  margin-bottom: var(--sp-lrg);
 }
 
 .navbar{
@@ -71,19 +73,15 @@ header {
 }
 
 .navbar__flexContainer--flex{
-  z-index: 5;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-end;
   gap: var(--sp-sml);
   padding: var(--sp-med) 0;
-  transform: translateX(100%);
-} 
+}
 
 .transX {
   transform: translateX(0);
-  display: flex;
 }
 
 .navbar__navlink{
@@ -121,7 +119,6 @@ header {
   transform: rotate(45deg) translate(-5px, 0px);
 }
 
-
 .content {
   margin-bottom: var(--sp-big);
   scroll-snap-align: start;
@@ -141,7 +138,7 @@ header {
 
  .content__list-title {
    font-size: var(--fs-med);
-   font-weight: 400;
+   font-weight:600;
    margin-bottom: var(--sp-sml);
  }
 
@@ -203,6 +200,9 @@ footer a{
 
   
   }
+  html{
+    overflow-x: hidden;
+  }
 
   body{
     overflow-x: hidden;
@@ -243,7 +243,6 @@ footer a{
 
   .transX {
     transform: translateX(0);
-    display: flex;
   }
 }
 
@@ -262,17 +261,18 @@ footer a{
 
   
   }
+  html{
+    overflow-x: hidden;
+  }
 
   body{
     overflow-x: hidden;
   }
-
   
   .navbar--flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* overflow-x: hidden; */
   }
 
   .navbar__flexContainer {
@@ -292,7 +292,6 @@ footer a{
     gap: var(--sp-sml);
     padding: var(--sp-med) 0;
     transform: translateX(100%);
-    display: none;
   }
   
   .navbar__navlink{
@@ -307,7 +306,6 @@ footer a{
 
   .transX {
     transform: translateX(0);
-    display: flex;
   }
 
   .content__list {
