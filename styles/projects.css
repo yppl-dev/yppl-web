@@ -137,14 +137,14 @@ header {
 
  .content__list-title {
    font-size: var(--fs-med);
-   font-weight: 400;
+   font-weight: 600;
    margin-bottom: var(--sp-sml);
  }
 
  .content__title{
   font-size: var(--fs-lrg);
   margin-bottom: var(--sp-lrg);
-  width: 55vh;
+  width: 40vmax;
   border-bottom: 3px solid var(--col-acc);
   font-weight: 400;
 }
