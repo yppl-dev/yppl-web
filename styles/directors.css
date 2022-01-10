@@ -43,7 +43,7 @@ body {
 
 header {
   width: 100%;
-  margin-bottom: var(--sp-med);
+  margin-bottom: var(--sp-lrg);
 }
 
 .navbar{
@@ -57,6 +57,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .navbar__logo{
@@ -72,19 +73,15 @@ header {
 }
 
 .navbar__flexContainer--flex{
-  z-index: 5;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-end;
   gap: var(--sp-sml);
   padding: var(--sp-med) 0;
-  transform: translateX(100%);
-} 
+}
 
 .transX {
   transform: translateX(0);
-  display: flex;
 }
 
 .navbar__navlink{
@@ -121,7 +118,6 @@ header {
 .navbar__burger-cross .navbar__burger-3{
   transform: rotate(45deg) translate(-5px, 0px);
 }
-
 
 
 
@@ -225,14 +221,17 @@ footer a{
 
   
   }
+  
   body{
     overflow-x: hidden;
   }
 
- .navbar--flex{
+  
+  .navbar--flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
   }
 
   .navbar__flexContainer {
@@ -264,7 +263,6 @@ footer a{
 
   .transX {
     transform: translateX(0);
-    display: flex;
   }
 }
 
@@ -287,13 +285,14 @@ footer a{
     overflow-x: hidden;
   }
 
-   .navbar--flex{
+  
+  .navbar--flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* overflow-x: hidden; */
   }
 
+  
   .navbar__flexContainer {
     background-color: var(--col-acc);
     width: 100%;
@@ -311,7 +310,7 @@ footer a{
     gap: var(--sp-sml);
     padding: var(--sp-med) 0;
     transform: translateX(100%);
-    display: none;
+    
   }
   
   .navbar__navlink{
@@ -326,7 +325,6 @@ footer a{
 
   .transX {
     transform: translateX(0);
-    display: flex;
   }
 
   .content__container {
