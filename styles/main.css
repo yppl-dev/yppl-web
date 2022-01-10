@@ -378,13 +378,7 @@ footer a{
     justify-content: flex-start;
     align-items: flex-start;
   }
-
-  .banner__logoContainer{
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
-
+  
   .opa100 {
     opacity: 100%;
   }
