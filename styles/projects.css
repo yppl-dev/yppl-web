@@ -254,28 +254,9 @@ header {
    
    
 
-  @media screen and (max-width: 568px) {
+@media screen and (max-width: 568px) {
 
-      :root {
-
-    --sp-big: 5rem;
-    --sp-lrg: 1.5rem;
-    --sp-med: 1.25rem;
-    --sp-sml: 1.125rem;
-
-    --fs-lrg: 2rem;
-    --fs-med: 1rem;
-    --fs-sml: 1rem;
-
-  
-  }
-   
-   
-    body{
-      overflow-x: hidden;
-    }
-  
-  .navbar--flex{
+.navbar--flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -314,3 +295,10 @@ header {
   .transX {
     transform: translateX(0);
   }
+
+    .content__list {
+      grid-template-columns: 1fr;
+    }
+
+  }
+   
