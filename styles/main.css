@@ -372,6 +372,11 @@ footer a{
     display: none;
   } */
 
+  .banner__titleContainer{
+    display: block;
+  }
+  
+  
 .banner__titleContainer--flex{
     display: flex;
     flex-direction: column;
