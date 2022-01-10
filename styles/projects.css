@@ -211,6 +211,11 @@ header {
 
   
   }
+   
+   
+    body{
+      overflow-x: hidden;
+    }
 
   .navbar--flex{
     display: flex;
@@ -267,6 +272,11 @@ header {
 
   
   }
+   
+   
+    body{
+      overflow-x: hidden;
+    }
   
   .navbar--flex{
     display: flex;
