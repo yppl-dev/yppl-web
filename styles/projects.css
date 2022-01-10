@@ -84,6 +84,7 @@ header {
 
 .transX {
   transform: translateX(0);
+  display: flex;
 }
 
 .navbar__navlink{
