@@ -43,6 +43,7 @@
   header {
     width: 100%;
     margin-bottom: var(--sp-med);
+    overflow-x: hidden;
   }
 
   .navbar{
