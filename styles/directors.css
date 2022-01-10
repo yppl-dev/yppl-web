@@ -1,0 +1,388 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --col-bg: #f1faee;
+  --col-prm: #1d3557;
+  --col-sec: #457b9d;
+  --col-acc: #e63946;
+
+  --sp-big: 10rem;
+  --sp-lrg: 5rem;
+  --sp-med: 2.75rem;
+  --sp-sml: 1.5rem;
+
+  --fs-lrg: 3rem;
+  --fs-med: 1.5rem;
+  --fs-sml: 1.125rem;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+
+header {
+  width: 100%;
+  margin-bottom: var(--sp-lrg);
+}
+
+.navbar{
+  position: relative;
+  background: var(--col-acc);
+  height: 100px;
+  transition: 0.3s ease-in background-color;
+}
+
+.navbar--flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo{
+  height: 40px;
+  margin-left: var(--sp-med);
+  transform: translateY(-3px);
+}
+
+.navbar__flexContainer {
+  width: 100%;
+  height: auto;
+  margin-right: var(--sp-med);
+}
+
+.navbar__flexContainer--flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--sp-sml);
+  padding: var(--sp-med) 0;
+}
+
+.transX {
+  transform: translateX(0);
+}
+
+.navbar__navlink{
+  margin-left: var(--sp-med);
+  color: var(--col-bg);
+  font-size: var(--fs-med);
+}
+
+.navbar__navlink-logo {
+  transform: translateY(5.5px);
+}
+
+.navbar__burger {
+  display: none;
+}
+
+
+.navbar__burger div{
+  width: 25px;
+  height:3px;
+  margin: 5px var(--sp-med) 5px 0;
+  background-color: #fff;
+  transform: translateY(2.55px);
+}
+
+.navbar__burger-cross .navbar__burger-1{
+  transform: rotate(-45deg) translate(-5px, 0px);
+}
+
+.navbar__burger-cross .navbar__burger-2{
+  display: none;
+}
+
+.navbar__burger-cross .navbar__burger-3{
+  transform: rotate(45deg) translate(-5px, 0px);
+}
+
+
+
+.content {
+  margin-bottom: var(--sp-big);
+  scroll-snap-align: start;
+}
+
+.content__container {
+  width: 80%;
+  margin: 0 auto;
+ }
+
+ .card{
+   background-color: var(--col-acc);
+   display: flex;
+   flex-direction: row;
+   gap: var(--sp-med);
+   margin-bottom: var(--sp-med);
+ }
+
+ .alter{
+   flex-direction: row-reverse;
+ }
+
+ .alter .content__desc .content__more{
+   align-self: flex-start;
+ }
+
+
+ .content__image-holder{
+   width: 49%;
+   height: 400px;
+ }
+
+ .content__image {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .content__desc {
+   padding: var(--sp-med);
+   color: white;
+   width: 49%;
+   display: flex;
+   flex-direction: column;
+   gap: var(--sp-med);
+ }
+
+ .content__name {
+   color: white;
+  font-size: var(--fs-med);
+  font-weight: 400;
+ }
+
+.content__more{
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+ .content__more-external {
+  background-color: white;
+  padding: 0.8rem 1rem;
+  color: var(--col-acc);
+ }
+
+ footer {
+  width: 100%;
+  background-color: var(--col-acc);
+  font-size: 1rem;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+
+@media screen and (min-width: 569px) and (max-width: 1080px) {
+
+  :root {
+   
+  
+    --sp-big: 5rem;
+    --sp-lrg: 2.5rem;
+    --sp-med: 1.5rem;
+    --sp-sml: 1.125rem;
+
+    --fs-lrg: 2rem;
+    --fs-med: 1.25rem;
+    --fs-sml: 1rem;
+
+  
+  }
+
+  .navbar--flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar__flexContainer {
+    background-color: var(--col-acc);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:80px;
+  }
+
+  .navbar__flexContainer--flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--sp-sml);
+    padding: var(--sp-med) 0;
+    transform: translateX(100%);
+  }
+
+  .navbar__navlink{
+    color: var(--col-bg);
+   font-size: var(--sp-med);
+  }
+
+  .navbar__burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .transX {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 568px) {
+
+  :root {
+
+    --sp-big: 5rem;
+    --sp-lrg: 1.5rem;
+    --sp-med: 1.25rem;
+    --sp-sml: 1.125rem;
+
+    --fs-lrg: 2rem;
+    --fs-med: 1.125rem;
+    --fs-sml: 1rem;
+
+  
+  }
+  
+  .navbar--flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar__flexContainer {
+    background-color: var(--col-acc);
+    width: 100%;
+    height: 60vmax;
+    position: absolute;
+    top:80px;
+    z-index: 5;
+  }
+
+  .navbar__flexContainer--flex{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--sp-sml);
+    padding: var(--sp-med) 0;
+    transform: translateX(100%);
+    
+  }
+  
+  .navbar__navlink{
+    color: var(--col-bg);
+   font-size: var(--fs-sml);
+  }
+
+  .navbar__burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .transX {
+    transform: translateX(0);
+  }
+
+  .content__container {
+    width: 80%;
+   }
+
+  .content__list {
+    grid-template-columns: 1fr;
+  }
+
+  
+ .card{
+  flex-direction: column;
+  gap: var(--sp-sml);
+  margin-bottom: var(--sp-sml);
+ }
+
+  .content__image-holder{
+    width: 100%;
+    height: 250px;
+  }
+ 
+  .content__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  .content__desc {
+    padding: var(--sp-med);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-sml);
+  }
+
+  .content__name {
+    color: white;
+   font-size: var(--fs-med);
+   font-weight: 600;
+  }
+
+  .content__about{
+    font-size: var(--fs-sml);
+  }
+ 
+ .content__more{
+   justify-self: flex-end;
+   align-self: flex-end;
+ }
+ 
+  .content__more-external {
+   background-color: white;
+   padding: 0.6rem 0.8rem;
+   color: var(--col-acc);
+  }
+
+  .content__desc .content__more{
+    align-self: flex-start;
+    margin-top: 0.8rem;
+  }
+
+  .alter .content__desc .content__more{
+    align-self: flex-start;
+    margin-top: 0.8rem;
+  }
+ 
+
+}
