@@ -351,7 +351,6 @@ footer a{
     gap: var(--sp-sml);
     padding: var(--sp-med) 0;
     transform: translateX(100%);
-    
   }
   
   .navbar__navlink{
@@ -368,9 +367,11 @@ footer a{
     transform: translateX(0);
   }
 
-  /* .banner__title {
-    display: none;
-  } */
+  .banner__title {
+  font-size: 3rem;
+  color: var(--col-bg);
+  font-weight: 900;
+}
 
   .banner__titleContainer{
     display: block;
