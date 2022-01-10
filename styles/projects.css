@@ -38,8 +38,6 @@ img {
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 header {
@@ -202,6 +200,10 @@ footer a{
   
   }
 
+  body{
+    overflow-x: hidden;
+  }
+
   .navbar--flex{
     display: flex;
     justify-content: space-between;
@@ -254,6 +256,10 @@ footer a{
     --fs-sml: 1rem;
 
   
+  }
+
+  body{
+    overflow-x: hidden;
   }
   
   .navbar--flex{
